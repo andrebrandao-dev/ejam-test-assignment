@@ -1,0 +1,94 @@
+@import '../variables/colors.scss';
+@import '../variables/breakpoints.scss';
+@import '../mixins/flex.scss';
+
+@mixin icon($backgroundColor, $borderColor, $textColor) {
+  @include flex(center, center);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid $borderColor;
+  background-color: $backgroundColor;
+  color: $textColor;
+  margin: 0 auto .5rem auto;
+  @media screen and (min-width: $medium) {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    margin-right: .5rem;
+  }
+
+  @media screen and (min-width: $large) {
+    margin-right: 1rem;
+    margin-bottom: 0;
+  }
+}
+
+.list {
+  @include flex(space-between, center);
+  list-style: none;
+  margin-top: 1.5rem;
+
+  @media screen and (min-width: $medium) {
+    margin: 3.75rem 0 2.5rem 0;
+  }
+}
+
+.item {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  @media screen and (min-width: $medium) {
+    flex-flow: unset;
+  }
+}
+
+.text {
+  font-size: .75rem;
+  display: block;
+  text-align: center;
+  width: 100%;
+  @media screen and (min-width: $medium) {
+    font-size: 1.25rem;
+    width: auto;
+  }
+}
+
+.textStep {
+  display: none; 
+  @media screen and (min-width: $large) {
+    display: inline-block;
+  }
+}
+
+.iconDone {
+  @include icon($green, $green, #FFF);
+  font-size: .375rem;
+
+  @media screen and (min-width: $medium) {
+    font-size: .85rem;
+  }
+}
+
+.iconCurrent {
+  @include icon($primary, $primary, #FFF);
+  font-size: .75rem;
+
+  & + .text {
+    font-weight: 700;
+  }
+
+  @media screen and (min-width: $medium) {
+    font-size: 1.25rem;
+  }
+}
+
+.iconNext {
+  @include icon(transparent, $primary, $primary);
+  font-size: .75rem;
+
+  @media screen and (min-width: $medium) {
+    font-size: 1.25rem;
+  }
+}

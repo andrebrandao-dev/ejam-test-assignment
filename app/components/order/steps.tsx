@@ -1,22 +1,40 @@
+import steps from '@/app/styles/modules/order-steps.module.scss'
+
 export default function OrderSteps() {
   return (
-    <ol>
-      <li className="done">
-        <span className="icon-check"></span>
-        <span>Step 1: Cart Review</span>
+    <ol className={steps.list}>
+      <li className={steps.item}>
+        <span className={steps.iconDone}>
+          <span className='icon-tick'></span>
+        </span>
+        <span className={steps.text}>
+          <span className={steps.textStep}>Step 1:</span> Cart Review
+        </span>
       </li>
-      <li className="done">
-        <span className="icon-check"></span>
-        <span>Step 2: Checkou</span>
+      <li className={steps.item}>
+        <span className={steps.iconDone}>
+          <span className='icon-tick'></span>
+        </span>
+        <span className={steps.text}>
+          <span className={steps.textStep}>Step 2:</span> Checkout
+        </span>
       </li>
-      <li className="current">
-        <span className="icon-check"></span>
-        <span>Step 3: Special Offer</span>
+      <li className={steps.item}>
+        <span className={steps.iconCurrent}>
+          3
+        </span>
+        <span className={steps.text}>
+          <span className={steps.textStep}>Step 3:</span> Special Offer
+        </span>
       </li>
-      <li className="next">
-        <span className="icon-check"></span>
-        <span>Step 4: Confirmation</span>
+      <li className={steps.item}>
+        <span className={steps.iconNext}>
+          4
+        </span>
+        <span className={steps.text}>
+          <span className={steps.textStep}>Step 4:</span> Confirmation
+        </span>
       </li>
-    </ol>
+    </ol>      
   )
 }

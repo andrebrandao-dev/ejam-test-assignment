@@ -2,8 +2,8 @@
 
 import Image from 'next/image'
 import BenefitsBar from "./components/benefits-bar"
-import OrderSteps from "./components/order/steps"
 import BlankSpace from './components/blank-space'
+import Order from './components/order'
 
 import Header from "./components/header"
 import textaligin from './styles/modules/textaligin.module.scss'
@@ -26,11 +26,7 @@ export default function Home() {
     <main>
       <BenefitsBar />
       <Header />
-      <div className={textaligin.center}>
-        <h2>Wait! Your Order In Progress.</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-      </div>
-      <OrderSteps />
+      <Order />
 
       <div className="gray">
         <div className="row">
