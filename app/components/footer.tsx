@@ -1,7 +1,7 @@
 import grid from '@/app/styles/modules/grid.module.scss'
 import footer from '@/app/styles/modules/footer.module.scss'
 
-export default function Header() {
+export default function Footer() {
   return (
     <footer className={footer.wrap}>
       <div className={grid.container}>

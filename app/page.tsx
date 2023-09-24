@@ -3,6 +3,8 @@
 import Image from 'next/image'
 import BenefitsBar from "./components/benefits-bar"
 import OrderSteps from "./components/order/steps"
+import BlankSpace from './components/blank-space'
+
 import Header from "./components/header"
 import textaligin from './styles/modules/textaligin.module.scss'
 

@@ -1,0 +1,40 @@
+@import '../variables/breakpoints.scss';
+@import '../mixins/flex.scss';
+
+.wrap {
+  padding: 1.88rem 0;
+  @media screen and (min-width: $medium) {
+    margin-top: 50px;
+  }
+}
+
+.logo,
+.image {
+  height: auto;
+}
+
+.logo {
+  max-width: 126px;
+  display: block;
+  @media screen and (min-width: $medium) {
+    max-width: 192px;
+  }
+}
+
+.image {
+  max-width: 64px;
+  display: inline-block;
+  & + & {
+    margin-left: 15px;
+  }
+  @media screen and (min-width: $medium) {
+    max-width: 88px;
+    & + & {
+      margin-left: 30px;
+    }
+  }
+}
+
+.content {
+  @include flex(space-between, center);
+}
