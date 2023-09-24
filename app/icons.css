@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icons/icomoon.eot?eoflla');
+  src:  url('icons/icomoon.eot?eoflla#iefix') format('embedded-opentype'),
+    url('icons/icomoon.ttf?eoflla') format('truetype'),
+    url('icons/icomoon.woff?eoflla') format('woff'),
+    url('icons/icomoon.svg?eoflla#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-lock-secure:before {
+  content: "\e901";
+}
+.icon-tick:before {
+  content: "\e908";
+}
+.icon-percent:before {
+  content: "\e900";
+}
+.icon-star-filled:before {
+  content: "\e902";
+}
+.icon-verified-filled:before {
+  content: "\e903";
+}
+.icon-sync-checkmark:before {
+  content: "\e904";
+}
+.icon-heart:before {
+  content: "\e905";
+}
+.icon-truck:before {
+  content: "\e906";
+}
+.icon-verified:before {
+  content: "\e907";
+}
