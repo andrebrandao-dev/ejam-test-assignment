@@ -7,6 +7,10 @@
   padding-top: 1.88rem;
   padding-bottom: 1.88rem;
   color: #FFF;
+  font-size: .75rem;
+  @media screen and (min-width: $medium) {
+    font-size: 1rem;
+  }
 }
 
 .content {
@@ -35,6 +39,10 @@
     text-align: right;
     margin-top: 0;
   }
+}
+
+.secureIcon {
+  margin-right: .75rem;
 }
 
 .link {

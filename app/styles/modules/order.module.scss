@@ -5,7 +5,7 @@
   background-color: $light;
   position: relative;
   height: auto;
-  padding: 2.5rem;
+  padding: 2.5rem 0;
   @media screen and (min-width: $medium) {
     background-color: transparent;
   }

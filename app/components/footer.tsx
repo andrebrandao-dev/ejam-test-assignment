@@ -13,7 +13,7 @@ export default function Footer() {
           </div>
 
           <div className={footer.secure}>
-            <span className='icon-lock'></span>
+            <span className={`icon-lock-secure ${footer.secureIcon}`}></span>
             <span>Secure 256-Bit SSL Encryption.</span>
           </div>
         </div>

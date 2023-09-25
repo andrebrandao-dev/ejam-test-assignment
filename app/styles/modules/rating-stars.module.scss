@@ -1,8 +1,14 @@
 @import '../variables/colors.scss';
+@import '../variables/breakpoints.scss';
 
 .icon {
   color: $yellow;
+  font-size: .75rem;
   & + & {
     margin-left: 6px;
+  }
+
+  @media screen and (min-width: $medium) {
+    font-size: 1rem;
   }
 }

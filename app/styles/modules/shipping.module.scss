@@ -1,0 +1,48 @@
+@import '../variables/colors.scss';
+@import '../variables/breakpoints.scss';
+@import '../mixins/flex.scss';
+
+.wrap {
+  @include flex(space-between, center);
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+  padding: .25rem .625rem;
+  color: $text;
+  font-size: .75rem;
+  margin-top: .625rem;
+  flex-flow: row wrap;
+  @media screen and (min-width: $large) {
+    flex-flow: unset;
+  }
+}
+
+.divider {
+  width: 1px;
+  height: 100%;
+  background-color: #CFCFCF;
+  height: 16px;
+  margin: .875rem;
+}
+.wrapFlags {
+  @include flex(center, center);
+  width: 100%;
+  border-top: 1px solid #CFCFCF;
+  padding: .625rem 0;
+  @media screen and (min-width: $large) {
+    justify-content: space-between;
+    width: auto;
+    padding: 0;
+  }
+}
+
+.flag {
+  height: 1rem;
+  width: auto;
+  & + & {
+    margin-left: 2px;
+  }
+
+  @media screen and (min-width: $large) {
+    height: .875rem;
+  }
+}

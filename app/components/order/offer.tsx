@@ -1,17 +1,10 @@
 import Image from 'next/image'
 import Commentary from '../commentary'
 import Product from '../product'
+import Shipping from '../shipping'
 
 import ProductDetail from '@/app/images/product-detail.png'
 import BadgeSatisfaction from '@/app/images/badge-satisfaction.png'
-
-import Amex from '@/app/images/card_flags/amex.svg'
-import ApplePay from '@/app/images/card_flags/applepay.svg'
-import GPay from '@/app/images/card_flags/gpay.svg'
-import MasterCard from '@/app/images/card_flags/mastercard.svg'
-import PayPal from '@/app/images/card_flags/paypal.svg'
-import ShopPay from '@/app/images/card_flags/shoppay.svg'
-import Visa from '@/app/images/card_flags/visa.svg'
 
 import grid from '@/app/styles/modules/grid.module.scss'
 import image from '@/app/styles/modules/image.module.scss'
@@ -78,59 +71,8 @@ export default function Offer() {
             </svg>
           </button>
 
-          <div className={offer.shipping}>
-            <span>Free Shipping</span>
-            <div className={offer.shippingDivider}></div>
-            <div>
-              <span className='icon-lock-secure'></span>
-              <span style={{marginLeft: '.575rem' }}>Secure 256-bit SSL encryption.</span>
-            </div>
-            <div className={offer.wrapFlags}>
-                <Image
-                  className={offer.cardFlag}
-                  src={Visa}
-                  alt="Visa"
-                  priority
-                />
-                <Image
-                  className={offer.cardFlag}
-                  src={ShopPay}
-                  alt="ShopPay"
-                  priority
-                />
-                <Image
-                  className={offer.cardFlag}
-                  src={PayPal}
-                  alt="Paypal"
-                  priority
-                />
-                <Image
-                  className={offer.cardFlag}
-                  src={MasterCard}
-                  alt="MasterCard"
-                  priority
-                />
-                <Image
-                  className={offer.cardFlag}
-                  src={GPay}
-                  alt="Google Pay"
-                  priority
-                />
-                <Image
-                  className={offer.cardFlag}
-                  src={ApplePay}
-                  alt="Apple Pay"
-                  priority
-                />
-                <Image
-                  className={offer.cardFlag}
-                  src={Amex}
-                  alt="Amex"
-                  priority
-                />
-            </div>
-          </div>
-          
+          <Shipping />
+
           <div className={offer.noAccept}>
             <button className={button.linkRed} type='button'>No thanks, I don't want this</button>
           </div>
