@@ -13,7 +13,7 @@
 }
 
 .head {
-  @include flex(start, center);
+  @include flex(flex-start, center);
   margin-bottom: 1.56rem;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .textGroup {
-  @include flex(start, center);
+  @include flex(flex-start, center);
 }
 
 .title {
@@ -39,7 +39,7 @@
 .verified {
   display: inline-flex;
   align-items: center;
-  justify-content: start;
+  justify-content: flex-start;
   color: $success;
   font-size: .75rem;
 }

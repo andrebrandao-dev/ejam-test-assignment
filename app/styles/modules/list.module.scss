@@ -11,7 +11,7 @@
 }
 
 .item {
-  @include flex(start, center);
+  @include flex(flex-start, center);
   color: #4D5254;
   text-align: left;
 
