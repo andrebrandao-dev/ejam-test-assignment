@@ -1,0 +1,50 @@
+@import '../variables/colors.scss';
+@import '../variables/breakpoints.scss';
+@import '../mixins/flex.scss';
+
+.wrap {
+  display: none;
+  background-color: #FFF;
+  border-radius: .625rem;
+  padding: 1.25rem;
+  @media screen and (min-width: $medium) {
+    display: block;
+  }
+}
+
+.head {
+  @include flex(start, center);
+  margin-bottom: 1.56rem;
+}
+
+.infos {
+  margin-left: 1.25rem;
+}
+
+.text {
+  color: $text;
+}
+
+.textGroup {
+  @include flex(start, center);
+}
+
+.title {
+  font-size: .875rem;
+  color: #000;
+  font-weight: 700;
+  margin-right: .75rem;
+}
+
+.verified {
+  display: inline-flex;
+  align-items: center;
+  justify-content: start;
+  color: $success;
+  font-size: .75rem;
+}
+
+.verifiedIcon {
+  font-size: 1.5rem;
+  margin-right: .75rem;
+}

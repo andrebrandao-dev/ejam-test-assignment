@@ -1,4 +1,5 @@
 import OrderSteps from './steps'
+import Offer from './offer'
 
 import order from '@/app/styles/modules/order.module.scss'
 import grid from '@/app/styles/modules/grid.module.scss'
@@ -13,6 +14,7 @@ export default function Order() {
         </div>
         
         <OrderSteps />
+        <Offer />
       </div>
     </div>
   )

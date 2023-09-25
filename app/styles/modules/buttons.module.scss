@@ -1,12 +1,20 @@
 @import '../variables/colors.scss';
 
-@mixin button {
+@mixin button($isLink: false) {
   border: 0;
   font-weight: 700;
   display: inline-flex;
   padding: .5rem 1.5rem;
   border-radius: 1rem;
+  font-size: 1.15rem;
   cursor: pointer;
+
+  @if $isLink {
+    text-decoration: underline;
+    background-color: transparent;
+    padding: 0;
+    text-transform: uppercase
+  }
 }
 
 .primary {
@@ -15,8 +23,13 @@
   color: white;
 }
 
-.secondary {
-  @include button;
-  background-color: $secondary;
-  color: white;
+// .secondary {
+//   @include button;
+//   background-color: $secondary;
+//   color: white;
+// }
+
+.linkRed {
+  @include button(true);
+  color: $red;
 }

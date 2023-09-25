@@ -1,0 +1,8 @@
+@import '../variables/colors.scss';
+
+.icon {
+  color: $yellow;
+  & + & {
+    margin-left: 6px;
+  }
+}
