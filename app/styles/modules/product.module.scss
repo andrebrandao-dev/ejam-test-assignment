@@ -1,0 +1,71 @@
+@import '../variables/colors.scss';
+@import '../variables/breakpoints.scss';
+@import '../mixins/flex.scss';
+
+.wrap {
+  @include flex(start, start);
+  margin-top: 1.25rem;
+}
+
+.image {
+  border-radius: .625rem;
+  background-color: $primary;
+  padding: .5rem;
+  img {
+    width: 134px;
+    height: auto;
+  }
+}
+
+.content {
+  margin-left: 1em;
+}
+
+.wrapTitle {
+  @include flex(space-between, center);
+  font-weight: 700;
+}
+
+.title {
+  font-size: 1.15rem;
+  color: #000;
+}
+
+.description {
+  color: $text;
+  line-height: 1.4;
+  font-size: .975rem
+}
+
+.price {
+  @include flex(space-between, center);
+ }
+
+.priceOld {
+  color: #969696;
+  text-decoration: line-through;
+}
+
+.priceNew {
+  color: $primary;
+  font-size: 1.38rem;
+  margin-left: .25rem;
+}
+
+.stock {
+  @include flex(start, center);
+  color: #37465A;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  font-size: .875rem;
+}
+
+.stockIn {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  outline: 8px solid $primaryLight;
+  background-color: $primary;
+  border-radius: 50%;
+  margin-right: 1.25rem;
+}

@@ -1,6 +1,6 @@
 @import '../variables/colors.scss';
 // @import '../variables/breakpoints.scss';
-// @import '../mixins/flex.scss';
+@import '../mixins/flex.scss';
 
 .wrap {
   background-color: $light;
@@ -32,4 +32,75 @@
   max-width: 100%;
   height: auto;
   margin-bottom: 1.5rem;
+}
+
+.satisfaction {
+  @include flex(start, center);
+  margin-top: 2.5rem;
+}
+
+.satisfactionText {
+  color: $text;
+  margin-left: 1rem;
+}
+
+.shipping {
+  @include flex(space-between, center);
+  border: 1px solid #CFCFCF;
+  border-radius: 4px;
+  padding: .25rem .625rem;
+  color: $text;
+  font-size: .75rem;
+  margin-top: .625rem
+}
+
+.shippingDivider {
+  width: 1px;
+  height: 100%;
+  background-color: #CFCFCF;
+  height: 16px;
+  margin: .875rem;
+}
+.wrapFlags {
+  @include flex(space-between, center);
+}
+
+.cardFlag {
+  height: .875rem;
+  width: auto;
+  & + & {
+    margin-left: 2px;
+  }
+}
+
+.saving {
+  @include flex(start, center);
+  background-color: $primaryLight;
+  border-radius: .625rem;
+  padding: .625rem .875rem;
+  color: #000;
+  margin: 1.88rem 0;
+  strong {
+    font-weight: 500;
+    color: $primary;
+  }
+}
+
+.savingText {
+  max-width: calc(100% - 42px);
+  margin-left: .625rem;
+}
+
+.savingIcon {
+  @include flex(center, center);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: $primary;
+  color: #FFF;
+  font-size: 1.19rem;
+}
+
+.list {
+  margin-top: 1.88rem;
 }

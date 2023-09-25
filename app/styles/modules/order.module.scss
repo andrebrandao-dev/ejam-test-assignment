@@ -7,7 +7,11 @@
   height: auto;
   padding: 2.5rem;
   @media screen and (min-width: $medium) {
-    background-color: #FFF;
+    background-color: transparent;
+  }
+
+  @media screen and (min-width: $large) {
+    margin-top: -125px;
   }
 }
 
@@ -25,7 +29,7 @@
   color: #000;
   font-weight: 500;
   @media screen and (min-width: $medium) {
-    background-color: #FFF;
+    background-color: transparent;
     font-size: 3rem;
   }
 }

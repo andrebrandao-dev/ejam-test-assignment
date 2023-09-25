@@ -5,9 +5,11 @@
   font-weight: 700;
   display: inline-flex;
   padding: .5rem 1.5rem;
-  border-radius: 1rem;
+  border-radius: 3.13rem;
   font-size: 1.15rem;
   cursor: pointer;
+  text-align: center;
+  justify-content: center;
 
   @if $isLink {
     text-decoration: underline;
@@ -23,13 +25,22 @@
   color: white;
 }
 
-// .secondary {
-//   @include button;
-//   background-color: $secondary;
-//   color: white;
-// }
+.secondary {
+  @include button;
+  background-color: $secondary;
+  color: white;
+  width: 100%;
+  font-size: 1.1 5rem;
+  text-transform: uppercase;
+  align-items: center;
+}
 
 .linkRed {
   @include button(true);
   color: $red;
+}
+
+.icon {
+  width: 1.25rem;
+  margin-left: 1.25rem;
 }

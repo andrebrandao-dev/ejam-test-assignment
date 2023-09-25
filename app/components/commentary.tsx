@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import RatingStars from '../rating-stars'
+import RatingStars from './rating-stars'
 import Avatar from '@/app/images/avatar.png'
 import image from '@/app/styles/modules/image.module.scss'
 import commentary from '@/app/styles/modules/commentary.module.scss'
