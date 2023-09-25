@@ -23,7 +23,7 @@ export default function Product() {
             <span className={product.priceNew}>$84</span>
           </div>
         </div>
-        <RatingStars />
+        <RatingStars icon="icon-star-bold" />
         <div className={product.stock}>
           <span className={product.stockIn}></span>
           <span>12 left in Stock</span>

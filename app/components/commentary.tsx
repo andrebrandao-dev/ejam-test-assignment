@@ -15,7 +15,7 @@ export default function Commentary() {
           priority
         />
         <div className={commentary.infos}>
-          <RatingStars />
+          <RatingStars icon='icon-star-filled' />
           <div className={commentary.textGroup}>
             <strong className={commentary.title}>Ken T.</strong>
             <span className={commentary.verified}>

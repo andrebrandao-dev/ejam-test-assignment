@@ -25,6 +25,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-star-bold:before {
+  content: "\e909";
+}
 .icon-lock-secure:before {
   content: "\e901";
 }
