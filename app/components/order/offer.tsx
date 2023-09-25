@@ -74,7 +74,7 @@ export default function Offer() {
           <Shipping />
 
           <div className={offer.noAccept}>
-            <button className={button.linkRed} type='button'>No thanks, I don't want this</button>
+            <button className={button.linkRed} type='button'>No thanks, I don&apos;t want this</button>
           </div>
 
           <div className={offer.satisfaction}>
